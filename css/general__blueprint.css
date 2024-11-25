@@ -54,3 +54,8 @@ li {
   background-color: green;
   padding: 1rem;
 }
+
+input {
+  border: none;
+  outline: none;
+}
