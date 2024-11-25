@@ -1,7 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <link rel="stylesheet" href="css/style.css"></link>
+    <title>Stack Visualizer</title>
+    <link rel="stylesheet" href="css/style.css" />
   </head>
-  <body></body>
+  <body>
+    <main>
+      <section class="input_section">
+        <input type="number" />
+        <button class="btn" id="push_btn"></button>
+        <button class="btn" id="pop_btn"></button>
+        <button class="btn" id="reset_btn"></button>
+      </section>
+      <section class="visual_section">
+        <div class="bucket_container">
+          <div class="bucket"></div>
+        </div>
+
+        <div class="stat_container">
+          <div class="stat">
+            <p class="stat_text">Top of stack:-</p>
+            <div class="stat_number" id="top_of_stack"></div>
+          </div>
+          <div class="stat">
+            <p class="stat_text">Last Pushed item:-</p>
+            <div class="stat_number" id="last_item"></div>
+          </div>
+          <div class="stat">
+            <p class="stat_text">Last Popped item:-</p>
+            <div class="stat_number" id="last_popped_item"></div>
+          </div>
+          <div class="stat">
+            <p class="stat_text">Size of the Stack:-</p>
+            <div class="stat_number" id="stack_size"></div>
+          </div>
+          <div class="message_box">
+            <h3>Message Box</h3>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
 </html>
