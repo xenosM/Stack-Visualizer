@@ -3,23 +3,25 @@
   <head>
     <title>Stack Visualizer</title>
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/general__blueprint.css" />
+    <link rel="stylesheet" href="css/utils.css" />
   </head>
   <body>
-    <main>
-      <section class="input_section">
-        <input type="number" />
-        <button class="btn" id="push_btn"></button>
-        <button class="btn" id="pop_btn"></button>
-        <button class="btn" id="reset_btn"></button>
+    <main class="flex">
+      <section class="input_section flex flex-centered">
+        <input type="number" class="number_input" />
+        <button class="btn" id="push_btn">Push</button>
+        <button class="btn" id="pop_btn">Pop</button>
+        <button class="btn" id="reset_btn">Reset</button>
       </section>
-      <section class="visual_section">
+      <section class="visual_section flex">
         <div class="bucket_container">
           <div class="bucket"></div>
         </div>
 
         <div class="stat_container">
           <div class="stat">
-            <p class="stat_text">Top of stack:-</p>
+            <p class="stat_text">Top of the stack:-</p>
             <div class="stat_number" id="top_of_stack"></div>
           </div>
           <div class="stat">
